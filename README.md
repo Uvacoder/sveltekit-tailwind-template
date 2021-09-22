@@ -1,7 +1,7 @@
+
 # SvelteKit + Tailwindcss (JIT)
 
 This is a starter template with SvelteKit and Tailwindcss JIT (Just In Time Compiler).
-
 
 ## Installation
 
@@ -9,6 +9,7 @@ Clone repository
 
 ```bash
   git clone https://github.com/codetann/sveltekit-tailwind-template.git
+
   cd sveltekit-tailwind-template
 
   npm install
