@@ -37,20 +37,19 @@ Install TypeScript dependencies
 Open `svelte.config.js` and import the rollup TypeScript plugin
 
 ```js
-import preprocess from 'svelte-preprocess';
+import preprocess from 'svelte-preprocess'; 
 import typescript from '@rollup/plugin-typescript'; // import here
 
 const config = {
-	kit: {
-		target: '#svelte'
-	},
-
-	preprocess: [
-		typescript(), // add typescript here
-		preprocess({
-			postcss: true
-		})
-	]
+  kit: {
+	  target: '#svelte'
+  },
+  preprocess: [
+	  typescript(), // add typescript here
+	  preprocess({
+		  postcss: true
+	  })
+  ]
 };
 
 export default config;
