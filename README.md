@@ -20,11 +20,42 @@ Clone repository
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
-npm run dev
+  npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+  # or start the server and open the app in a new browser tab
+  npm run dev -- --open
 ```
+
+## TypeScript
+
+Install TypeScript dependencies
+
+```bash
+  npm i -D @rollup/plugin-typescript typescript tslib
+```
+
+Open `svelte.config.js` and import the rollup TypeScript plugin
+
+```js
+import preprocess from 'svelte-preprocess';
+import typescript from '@rollup/plugin-typescript'; // import here
+
+const config = {
+	kit: {
+		target: '#svelte'
+	},
+
+	preprocess: [
+		typescript(), // add typescript here
+		preprocess({
+			postcss: true
+		})
+	]
+};
+
+export default config;
+```
+
 
 ## Building
 
