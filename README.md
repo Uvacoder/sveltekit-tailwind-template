@@ -55,9 +55,9 @@ const config = {
 export default config;
 ```
 
-Change lang .svelte files
+Update `<scirpt>` tag in .svelte files
 
-```svelte
+```html
 <script lang='ts'></scirpt>
 ```
 
