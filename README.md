@@ -55,6 +55,12 @@ const config = {
 export default config;
 ```
 
+Change lang .svelte files
+
+```svelte
+<script lang='ts'></scirpt>
+```
+
 
 ## Building
 
