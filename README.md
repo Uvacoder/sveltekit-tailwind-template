@@ -31,7 +31,7 @@ Once you've created a project and installed dependencies with `npm install` (or 
 Install TypeScript dependencies
 
 ```bash
-  npm i -D @rollup/plugin-typescript typescript tslib
+  npm install -D @rollup/plugin-typescript typescript tslib
 ```
 
 Open `svelte.config.js` and import the rollup TypeScript plugin
