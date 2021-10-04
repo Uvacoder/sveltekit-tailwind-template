@@ -57,7 +57,7 @@ export default config;
 
 Update `<scirpt>` tag in .svelte files
 
-```html
+```svelte
 <script lang='ts'></scirpt>
 ```
 
